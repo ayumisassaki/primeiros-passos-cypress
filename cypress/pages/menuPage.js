@@ -11,7 +11,10 @@ class MenuPage  {
 
     accessMyInfo() {
         cy.get(this.selectorsList().myInfoButton).click()
+    }
 
+    accessPerformance() { 
+        cy.get(this.selectorsList().performanceButton).click()
     }
 }
 
