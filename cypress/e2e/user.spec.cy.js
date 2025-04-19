@@ -23,7 +23,7 @@ describe('template spec', () => {
     menuPage.accessMyInfo()
 
     myinfopage.fillPersonalDetails(chance.first(), chance.last())
-    myinfopage.fillEmployeeDetails('EmployId', 'ortherId', '2025-07-29', )
+    myinfopage.fillEmployeeDetails(chance.ssn({ ssnFour: true }), chance.cpf(), chance.ssn({ dashes: false }) )
     myinfopage.fillStatus()
     myinfopage.saveForm()
     
